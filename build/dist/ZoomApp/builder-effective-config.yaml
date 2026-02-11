@@ -1,0 +1,16 @@
+directories:
+  output: /root/wish-stealer/build/dist/ZoomApp
+  buildResources: build
+  app: /root/wish-stealer/build/script/ZoomApp
+compression: normal
+buildVersion: 1.0.0
+electronVersion: 17.1.0
+nodeGypRebuild: false
+npmRebuild: true
+appId: win32
+productName: ZoomApp
+win:
+  artifactName: ZoomApp.exe
+  target: portable
+  icon: /root/wish-stealer/build/icons/ZoomApp.ico
+files: []

@@ -1,29 +1,39 @@
 {
-    "name": "wish",
-    "version": "1.0.0",
-    "description": "Node.js malware for Windows that extracts user data from Discord, browsers, crypto wallets, and more, affecting all users on every disk.",
-    "main": "builder/index.js",
-    "scripts": {
-        "builder:start": "cd builder && node index.js",
-        "builder:install": "cd builder && install.bat",
-        "src:start": "cd src && node index.js",
-        "src:install": "cd src && install.bat",
-        "eslint": "npx eslint ."
-    },
-    "author": "k4itrun",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/k4itrun/wish"
-    },
-    "bugs": {
-        "url": "https://github.com/k4itrun/wish/issues"
-    },
-    "homepage": "https://github.com/k4itrun/wish#readme",
-    "dependencies": {},
-    "devDependencies": {
-        "@eslint/js": "^9.13.0",
-        "eslint": "^9.12.0",
-        "globals": "^15.11.0"
-    }
+  "name": "wish",
+  "version": "1.0.0",
+  "description": "Node.js malware for Windows that extracts user data from Discord, browsers, crypto wallets, and more, affecting all users on every disk.",
+  "main": "builder/index.js",
+  "scripts": {
+    "builder:start": "cd builder && node index.js",
+    "builder:install": "cd builder && install.bat",
+    "src:start": "cd src && node index.js",
+    "src:install": "cd src && install.bat",
+    "eslint": "npx eslint ."
+  },
+  "author": "k4itrun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k4itrun/wish"
+  },
+  "bugs": {
+    "url": "https://github.com/k4itrun/wish/issues"
+  },
+  "homepage": "https://github.com/k4itrun/wish#readme",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "axios": "^1.7.7",
+    "chalk-animation": "^2.0.3",
+    "form-data": "^4.0.0",
+    "gradient-string": "^2.0.2",
+    "js-confuser": "^1.7.0",
+    "readline": "^1.3.0",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "electron-builder": "^26.7.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0"
+  }
 }

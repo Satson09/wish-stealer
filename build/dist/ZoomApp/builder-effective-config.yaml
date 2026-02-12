@@ -12,5 +12,5 @@ productName: ZoomApp
 win:
   artifactName: ZoomApp.exe
   target: portable
-  icon: /root/wish-stealer/build/icons/ZoomApp.ico
+  icon: null
 files: []

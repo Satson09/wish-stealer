@@ -23,7 +23,7 @@
   "dependencies": {
     "archiver": "^7.0.1",
     "axios": "^1.7.7",
-    "chalk-animation": "^2.0.3",
+    "chalk": "^5.6.2",
     "form-data": "^4.0.0",
     "gradient-string": "^2.0.2",
     "js-confuser": "^1.7.0",

@@ -1,9 +1,9 @@
 const child_process = require("child_process");
 const electron = require("electron-builder");
 const gradient = require("gradient-string");
-const imageToIco = require("image-to-ico");
+//const imageToIco = require("image-to-ico");
 const jsConfuser = require("js-confuser");
-const chalk = require("chalk-animation");
+//const chalkAnimation = require('chalk-animation');
 const readline = require("readline");
 const axios = require("axios");
 const path = require("path");
@@ -35,11 +35,11 @@ class Builder {
                 writer.on('error', reject);
             });
 
-            const buffer = await imageToIco(imagePathTemp, {
+           /* const buffer = await imageToIco(imagePathTemp, {
                 size: [256, 256],
                 quality: 100,
                 greyscale: false
-            });
+            });*/
 
             fs.writeFileSync(imagePath, buffer);
             fs.unlinkSync(imagePathTemp);
@@ -58,7 +58,7 @@ class Builder {
         const iconPath = path.join(buildPath, 'icons', `${exeName}.ico`);
 
         try {
-            await this.CreateIcon(imageUrl, imagePathTemp, iconPath);
+           // await this.CreateIcon(imageUrl, imagePathTemp, iconPath);
 
             await electron.build({
                 targets: electron.Platform.WINDOWS.createTarget(null, electron.Arch.x64),
@@ -73,7 +73,7 @@ class Builder {
                     win: {
                         artifactName: `${exeName}.exe`,
                         target: "portable",
-                        icon: iconPath
+                        icon: null
                     },
                     directories: {
                         app: dirPath,
@@ -280,10 +280,10 @@ class Builder {
     async start() {
         try {
             console.clear();
-            chalk.radar(utils.WishBanner()).start();
+            console.log(utils.WishBanner());
 
             setTimeout(async () => {
-                chalk.radar(gradient.summer(utils.WishBanner())).stop();
+               // chalkAnimation.pulse(gradient.summer(utils.WishBanner())).stop();
 
                 this.installDependencies();
 
